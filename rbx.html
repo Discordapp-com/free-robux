@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Free Robux Generator</title>
+  <style>
+    body {
+      background-color: #1c1c1c;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    input, button {
+      padding: 12px;
+      font-size: 18px;
+      margin: 10px;
+      border: none;
+      border-radius: 6px;
+    }
+    input {
+      width: 250px;
+    }
+    button {
+      background-color: #00cc66;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #00a358;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ayan's Free Robux Generator</h1>
+  <p>Enter your Roblox username and amount of Robux</p>
+
+  <input type="text" id="username" placeholder="Your Roblox Username"><br>
+  <input type="number" id="robux" placeholder="Amount of Robux"><br>
+  <button onclick="transferRobux()">Transfer Robux</button>
+
+  <p id="status" style="margin-top: 20px; font-weight: bold;"></p>
+
+  <script>
+    function transferRobux() {
+      const username = document.getElementById('username').value;
+      const robux = document.getElementById('robux').value;
+      const status = document.getElementById('status');
+
+      if (!username || !robux) {
+        status.textContent = " Please enter both fields!";
+        return;
+      }
+
+      status.textContent = "Transferring Robux to @" + username + "...";
+
+      setTimeout(() => {
+        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; // Rickroll link
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
